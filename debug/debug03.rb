@@ -1,7 +1,7 @@
 def sum(list)
-  list.each do |ele|
-    sum = 0
-    sum += ele
+  sum = 0
+  list.each do |num|
+    sum += num
   end
   sum
 end
@@ -13,4 +13,6 @@ puts sum(list1)
 
 # 2. How would you refactor it using an enumerable method other than each? Examples of enumerables: map, select, inject, reject, detect.
 
+p list1.inject(:+)
 
+puts list1.inject(0) {|result, number| result + element}

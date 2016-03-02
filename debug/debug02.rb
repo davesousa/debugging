@@ -9,7 +9,7 @@ end
 ## TEST HELPER METHOD
 def test_average(array = [])
   print "avg of #{array.inspect}:"
-  result = average(array)
+  result = average(array.compact)
   p result
 end
 
